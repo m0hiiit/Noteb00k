@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  font-family: 'Alkatra', cursive;
+  /* background-color: #2A363B ; */
+  background: url('./3649732.jpg') no-repeat top center/cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+::placeholder {
+  opacity: 1;
+  color: #7193ee !important;
+  border-color: #7193ee !important;
+}
+
+
+.back {
+  background-color: #7193ee;
+  color: #fff;
+  transition: all .25s ease-in-out;
+}
+
+.back:hover {
+  background-color: #fcef8a;
+  color: black;
+  border-color: black;
+}
+
+.butn {
+  border: 1px solid #7193ee;
+  background-color: #7193ee;
+  color: #fff;
+}
+
+.butn:hover {
+  border: 1px solid #7193ee;
+  background-color: #7193ee;
+  color: #fff;
+}
+
+.p-text {
+  position: relative;
+  right: 3.6rem;
+}
+
+.cursior {
+  cursor: pointer;
+}
+
+.clear-all {
+  background-color: #fcef8a;
+  width: 15%;
+  margin-top: 2.5rem;
+  border-radius: 4px;
+  padding-block: .8rem;
+  transition: all .3s ease-in-out;
+}
+
+.clear-all:hover {
+  background-color: #7193ee;
+  color: white;
+}
+
+@media screen and (max-width : 500px) {
+  body {
+    background: url("./mobile-bg.png") no-repeat top/cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+
+  .back {
+    background-color: #fefbec;
+    color: #95ae88;
+    margin-block: -8px !important;
+  }
+
+  .butn {
+    border: 1px solid #fefbec;
+    background-color: #fefbec;
+    color: #95ae88;
+  }
+
+  .back:hover {
+    background-color: #95ae88;
+    color: #fefbec;
+  }
+
+  .butn:hover {
+    border: 1px solid #fefbec;
+    background-color: #fefbec;
+    color: #95ae88;
+  }
+
+  ::placeholder {
+    opacity: 1;
+    color: #95ae88 !important;
+    border-color: #fefbec !important;
+  }
+
+  .clear-all {
+    background-color: red;
+    width: 30%;
+    margin-top: 2.5rem;
+  }
+}
